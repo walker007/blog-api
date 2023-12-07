@@ -1,0 +1,27 @@
+POST http://127.0.0.1:3000/api/v1/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Alex Júnior",
+    "birthDate": "1997-04-29",
+    "email": "alexjr.anp@gmail.com",
+    "password": "123456789",
+    "gender": "Male" // Male | Female | 39 tipo de gay | Helicóptero Russo de combate
+
+}
+###
+
+POST http://127.0.0.1:3000/api/v1/users/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "alexjr.anp@gmail.com",
+    "password": "123456789",
+}
+###
+
+GET http://127.0.0.1:3000/api/v1/users HTTP/1.1
+###
+
+GET http://127.0.0.1:3000/api/v1/users/1 HTTP/1.1
+###
