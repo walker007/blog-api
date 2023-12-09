@@ -6,7 +6,7 @@ Content-Type: application/json
     "birthDate": "1997-04-29",
     "email": "alexjr.anp@gmail.com",
     "password": "123456789",
-    "gender": "Male" // Male | Female | 39 tipo de gay | Helicóptero Russo de combate
+    "gender": "Male"
 
 }
 ###
@@ -23,5 +23,5 @@ Content-Type: application/json
 GET http://127.0.0.1:3000/api/v1/users HTTP/1.1
 ###
 
-GET http://127.0.0.1:3000/api/v1/users/1 HTTP/1.1
+GET http://127.0.0.1:3000/api/v1/users/875d867f-d966-4372-a30f-883c1f7ff7cd HTTP/1.1
 ###
