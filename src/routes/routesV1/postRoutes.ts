@@ -1,25 +1,12 @@
 import { Router } from "express";
+import * as postController from "../../controllers/postController";
 
 const postRoutes = Router();
 
-postRoutes.get("/posts", (req, res) => {
-  res.send("Lista posts.");
-});
-
-postRoutes.get("/posts/:id", (req, res) => {
-  res.send("Lista post por id.");
-});
-
-postRoutes.post("/posts", (req, res) => {
-  res.send("Cadastra post.");
-});
-
-postRoutes.put("/posts/:id", (req, res) => {
-  res.send("Atualiza post por id.");
-});
-
-postRoutes.delete("/posts/:id", (req, res) => {
-  res.send("Apaga post por id.");
-});
+postRoutes.get("/posts", postController.getPosts);
+postRoutes.get("/posts/:id", postController.getPostById);
+postRoutes.post("/posts", postController.createPost);
+postRoutes.put("/posts/:id", postController.updatePost);
+postRoutes.delete("/posts/:id", postController.deletePost);
 
 export { postRoutes };
